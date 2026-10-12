@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: movierecapai-server
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: MAX_UPLOAD_MB
+        value: "2048"
+      - key: JOB_TTL_HOURS
+        value: "6"
