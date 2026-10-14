@@ -6,6 +6,10 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /health
     envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: MOVIERECAP_API_KEY
+        sync: false
       - key: MAX_UPLOAD_MB
         value: "2048"
       - key: JOB_TTL_HOURS

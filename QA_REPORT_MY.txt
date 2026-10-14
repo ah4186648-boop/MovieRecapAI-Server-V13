@@ -1,0 +1,15 @@
+MovieRecapAI v23 — QA report
+
+PASS: Python syntax compile for server.py.
+PASS: Local pytest smoke tests: 4 passed.
+PASS: /health and /capabilities smoke coverage.
+PASS: Missing OpenAI key returns clean 503 for recap and long TTS.
+PASS: Input validation and MP3 output-route MIME/path smoke tests (fake MP3 bytes for route only).
+
+NOT VERIFIED:
+- Real OpenAI API call or generated Burmese speech (no live credential test performed).
+- Live Render deployment of this bundle.
+- Raw movie audio transcription.
+- End-to-end Android app call to the new endpoints.
+- Built or installed APK.
+- Guaranteed 50–55 minute generated audio; target duration is advisory.
